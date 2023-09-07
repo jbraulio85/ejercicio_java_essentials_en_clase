@@ -13,7 +13,7 @@ public class Conexion {
         try{
             Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
             conexion = DriverManager.getConnection
-                                ("jdbc:mysql://localhost:3306/dbtiendaelectronicos?useSSL=false","root","root");
+                                ("jdbc:mysql://localhost:3306/dbtiendaelectronicos?useSSL=false","jecheverria","root");
         }catch(ClassNotFoundException | SQLException | InstantiationException | IllegalAccessException error){
             System.out.println(error.getMessage());
         }
